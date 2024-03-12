@@ -1,0 +1,105 @@
+.contact-us {
+    background-color: var(--section-color);
+    padding: 90px 0;
+    font-weight: 100;
+}
+
+.contact-us__form-container {
+    font-size: 12px;
+    background-color: var(--background-color);
+    padding: 0 40px;
+    margin: 0 30px;
+
+}
+
+.contact-us__form {
+    padding: 44px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__form-input,
+.contact-us__form-textarea {
+    color: var(--text-light-color);
+    border: 0;
+    margin: 12px 0px;
+    padding: 20px 30px;
+    border-radius: 5px;
+
+}
+
+.contact-us .button {
+    width: 100%;
+    margin: 12px 0px 0px;
+    padding: 20px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.contact-us__contact-info {
+    padding: 0 30px;
+    margin-top: 50px;
+}
+/*
+.contact-us__contact-info:nth-child(n) {
+    margin: 16px 0; 
+}
+*/
+.contact-info__title {
+    font-size: 22px;
+
+}
+
+.contact-info__text {
+    font-size: 18px;
+}
+
+.contact-info__address {
+    font-size: 16px;
+    color: var(--text-light-color);
+
+}
+
+.contact-info__working-hours span {
+    font-size: 16px;
+    color: var(--text-light-color);
+    display: block;
+}
+
+.contact-info__tel-mail a {
+    font-size: 16px;
+    color: var(--text-main-color);
+    display: block;
+}
+
+.contact-info__map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact-info__map iframe {
+    width: 100%;
+    filter: grayscale();
+}
+
+@media (min-width: 768px) {
+    .contact-us__container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-us__contact-info{
+        margin-top: 0;
+    }
+    
+}
+@media (min-width:1024px) {
+    .contact-us__container.container{
+        min-width: 1024px;
+    }
+}
+@media (min-width:1440px) {
+    .contact-us__container.container{
+        min-width: 1440px;
+    }
+}

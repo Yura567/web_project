@@ -1,0 +1,165 @@
+.carousel-quotes {
+    padding: 70px 0px 70px 0px;
+}
+
+.carousel-quotes__title {
+    text-align: center;
+    color: var(--text-main-color);
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.carousel-quotes__subtitle {
+    text-align: center;
+    color: var(--text-main-color);
+    font-size: 18px;
+    margin: 25px 0px 35px 0px;
+}
+
+.carousel-quotes__item {
+    background-color: var(--section-color);
+    padding: 0px 35px 45px 35px;
+    margin: 15px;
+}
+
+.carousel-quotes__item-name {
+    font-size: 22px;
+    color: var(--text-main-color);
+    font-weight: 500;
+}
+
+.carousel-quotes__item-city {
+    font-size: 14px;
+    color: #2c2c2c;
+    margin-top: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: calc(0.064 * 1em);
+}
+
+.carousel-quotes__item-text {
+    font-size: 16px;
+    color: var(--text-light-color);
+    margin-top: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: calc(0.05 * 1em);
+}
+
+.carousel-quotes__item-date {
+    font-size: 14px;
+    color: #2c2c2c;
+    margin-top: 25px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: calc(0.064 * 1em);
+}
+
+.carousel-quotes__item-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 50px 0px 15px 0px;
+    object-fit: cover;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    flex-direction: row;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #c6c5c5;
+    border-radius: 50%;
+    border: none;
+}
+
+.slick-dots  button:hover {
+    background-color: #2b292b
+}
+
+.slick-dots .slick-active button {
+    background-color: #646364
+}
+
+.carousel-quotes__container {
+    position: relative;
+    margin: 0% 12% 0% 12%;
+    padding: 0% 2% 0% 2%;
+}
+
+.carousel-quotes__container .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin-top: -25px;
+}
+
+.slick-prev {
+    left: 0;
+    font-size: 0;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background: none;
+    background-image: url('../img/customer-quotes-carousel/arrow-for-carousel.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+
+.slick-next {
+    right: 0;
+    font-size: 0;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background: none;
+    background-image: url('../img/customer-quotes-carousel/arrow-for-carousel.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    transition: 0.5s ease;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-image: url('../img/customer-quotes-carousel/hover-arrow-for-carousel.svg');
+    transition: 0.5s ease;
+}
+
+@media (max-width: 1192px) {
+    .carousel-quotes__container {
+        margin: 0% 5% 0% 5%;
+    }
+    
+    .slick-prev, .slick-next {
+        border-radius: 50%;
+        background-color: #2b292b;
+        height: 25px;
+        width: 25px;
+    }
+
+    .slick-prev:hover, .slick-next:hover {
+        background-color: black;
+    }
+}
